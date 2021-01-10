@@ -2,11 +2,13 @@ from math import *
 
 
 # Parameters: function, lower bound, upper bound, number of iterations, desired tolerance
-def false_position(f, a, b, N, err=False):
+def false_position(func, a, b, N, err=False):
     # Output will be a dictionary in form
     # {lower bound, upper bound, function at lower bound, function at upper bound, new bound, function at new bound, error}
     result = {}
 
+    f = lambda x: eval(func)
+    
     if f(a) * f(b) >= 0:
         print("Bisection method fails.")
         return None

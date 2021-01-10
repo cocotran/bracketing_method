@@ -2,11 +2,12 @@ from math import *
 
 
 # Parameters: function, lower bound, upper bound, number of iterations
-def secant(f, a, b, N):
+def secant(func, a, b, N):
     # Output will be a dictionary in form
     # {lower bound, upper bound, function at lower bound, function at upper bound, new bound, function at new bound}
     result = {}
 
+    f = lambda x: eval(func)
     if f(a) * f(b) >= 0:
         print("Secant method fails.")
         return None
