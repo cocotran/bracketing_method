@@ -1,15 +1,13 @@
 # Simple Bracketing Method Implementation
 
-* Bisection method<br/>
-* False-Position method<br/>
-* Secant method<br/>
-
 ## Demo
-You can try the demo [here](colculator.com)
+* [Bisection method](https://colculator.com/calculators?calculator=Bisection_Method)<br/>
+* [False-Position method](https://colculator.com/calculators?calculator=False-Position_Method)<br/>
+* [Secant method](https://colculator.com/calculators?calculator=Secant_Method)<br/>
 
 ## Usage 
 clone the repo<br/>
 ```bash
-python3 bracketingMethod.py
+flask run  # start flask local server
 ```
 
